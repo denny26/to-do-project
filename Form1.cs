@@ -25,26 +25,6 @@ namespace ToDo
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e) //Welcome...
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e) //username picture
-        {
-
-        }
-
-        private void Username_textBox1(object sender, EventArgs e) //Username
-        {
-
-        }
-
-        private void Password_textBox2(object sender, EventArgs e) //Password
-        {
-
-        }
-
         private void Login_btn_Click(object sender, EventArgs e) //Login
         {
             var filter = Builders<User>.Filter.Eq("email", textEmail.Text);
@@ -81,11 +61,6 @@ namespace ToDo
         {
             this.Hide();
             new Registration().Show();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Form1_Leave(object sender, EventArgs e)

@@ -32,11 +32,6 @@ namespace ToDo
             Environment.Exit(Environment.ExitCode);
         }
 
-        private void textAddToDo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void ToDoList_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedItem = todoList.Text;

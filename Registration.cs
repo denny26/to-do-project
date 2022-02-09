@@ -24,32 +24,12 @@ namespace ToDo
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e) //Please fill your info...
-        {
-
-        }
-
-        private void Email_textBox(object sender, EventArgs e) //E-mail
-        {
-
-        }
-
-        private void Username_textBox2(object sender, EventArgs e) //Username
-        {
-
-        }
-
-        private void Password_textBox3(object sender, EventArgs e) //Password
-        {
-
-        }
-
         private void Sign_in_btn_Click(object sender, EventArgs e) //Sign in
         {   
             // Check for empty fields
             if (textEmail.Text == "" || textUsername.Text == "" || textPassword.Text == "")
             {    
-                MessageBox.Show("You have an empty field either for email, username or password. Please fill all the fields!");
+                MessageBox.Show("You have an empty field either for email, username or password. Please fill all the empthy fields!");
                 return;
             }
 

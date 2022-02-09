@@ -61,7 +61,6 @@ namespace ToDo
             this.label1.Size = new System.Drawing.Size(217, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -84,7 +83,6 @@ namespace ToDo
             this.pictureBox1.Size = new System.Drawing.Size(27, 26);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -105,7 +103,6 @@ namespace ToDo
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(195, 26);
             this.textEmail.TabIndex = 4;
-            this.textEmail.TextChanged += new System.EventHandler(this.Username_textBox1);
             // 
             // textPassword
             // 
@@ -116,7 +113,6 @@ namespace ToDo
             this.textPassword.PasswordChar = '*';
             this.textPassword.Size = new System.Drawing.Size(195, 26);
             this.textPassword.TabIndex = 5;
-            this.textPassword.TextChanged += new System.EventHandler(this.Password_textBox2);
             // 
             // pictureBox3
             // 
@@ -193,7 +189,6 @@ namespace ToDo
             this.label3.Size = new System.Drawing.Size(170, 20);
             this.label3.TabIndex = 12;
             this.label3.Text = "Please, enter your e-mail:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 

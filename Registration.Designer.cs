@@ -74,7 +74,6 @@ namespace ToDo
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(190, 27);
             this.textEmail.TabIndex = 3;
-            this.textEmail.TextChanged += new System.EventHandler(this.Email_textBox);
             // 
             // textUsername
             // 
@@ -84,7 +83,6 @@ namespace ToDo
             this.textUsername.Name = "textUsername";
             this.textUsername.Size = new System.Drawing.Size(190, 27);
             this.textUsername.TabIndex = 4;
-            this.textUsername.TextChanged += new System.EventHandler(this.Username_textBox2);
             // 
             // textPassword
             // 
@@ -95,7 +93,6 @@ namespace ToDo
             this.textPassword.PasswordChar = '*';
             this.textPassword.Size = new System.Drawing.Size(190, 27);
             this.textPassword.TabIndex = 5;
-            this.textPassword.TextChanged += new System.EventHandler(this.Password_textBox3);
             // 
             // label3
             // 
@@ -108,7 +105,6 @@ namespace ToDo
             this.label3.Size = new System.Drawing.Size(180, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "Please, fill your information";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 

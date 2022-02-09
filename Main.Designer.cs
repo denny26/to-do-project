@@ -96,7 +96,6 @@ namespace ToDo
             this.textAddToDo.Name = "textAddToDo";
             this.textAddToDo.Size = new System.Drawing.Size(179, 41);
             this.textAddToDo.TabIndex = 8;
-            this.textAddToDo.TextChanged += new System.EventHandler(this.textAddToDo_TextChanged);
             // 
             // AddToDo_label
             // 
