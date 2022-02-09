@@ -29,7 +29,7 @@ namespace ToDo
             // Check for empty fields
             if (textEmail.Text == "" || textUsername.Text == "" || textPassword.Text == "")
             {    
-                MessageBox.Show("You have an empty field either for email, username or password. Please fill all the empthy fields!");
+                MessageBox.Show("You have an empty field either for email, username or password. Please fill all the necessary information!");
                 return;
             }
 

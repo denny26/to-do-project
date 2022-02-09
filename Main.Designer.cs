@@ -37,16 +37,18 @@ namespace ToDo
             this.textAddToDo = new System.Windows.Forms.TextBox();
             this.AddToDo_label = new System.Windows.Forms.Label();
             this.Displayed_ToDo_label = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBaymax = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBaymax)).BeginInit();
             this.SuspendLayout();
             // 
             // Add_btn
             // 
             this.Add_btn.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Add_btn.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.Add_btn.Location = new System.Drawing.Point(197, 81);
+            this.Add_btn.Location = new System.Drawing.Point(206, 84);
             this.Add_btn.Name = "Add_btn";
             this.Add_btn.Size = new System.Drawing.Size(123, 41);
             this.Add_btn.TabIndex = 0;
@@ -58,7 +60,7 @@ namespace ToDo
             // 
             this.Check_All_btn.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Check_All_btn.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.Check_All_btn.Location = new System.Drawing.Point(197, 171);
+            this.Check_All_btn.Location = new System.Drawing.Point(206, 174);
             this.Check_All_btn.Name = "Check_All_btn";
             this.Check_All_btn.Size = new System.Drawing.Size(123, 55);
             this.Check_All_btn.TabIndex = 1;
@@ -70,7 +72,7 @@ namespace ToDo
             // 
             this.Delete_ToDo_btn.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Delete_ToDo_btn.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.Delete_ToDo_btn.Location = new System.Drawing.Point(197, 258);
+            this.Delete_ToDo_btn.Location = new System.Drawing.Point(206, 261);
             this.Delete_ToDo_btn.Name = "Delete_ToDo_btn";
             this.Delete_ToDo_btn.Size = new System.Drawing.Size(123, 41);
             this.Delete_ToDo_btn.TabIndex = 2;
@@ -82,7 +84,7 @@ namespace ToDo
             // 
             this.todoList.BackColor = System.Drawing.SystemColors.Control;
             this.todoList.FormattingEnabled = true;
-            this.todoList.Location = new System.Drawing.Point(12, 171);
+            this.todoList.Location = new System.Drawing.Point(12, 174);
             this.todoList.Name = "todoList";
             this.todoList.Size = new System.Drawing.Size(179, 292);
             this.todoList.TabIndex = 9;
@@ -91,7 +93,7 @@ namespace ToDo
             // textAddToDo
             // 
             this.textAddToDo.BackColor = System.Drawing.SystemColors.Control;
-            this.textAddToDo.Location = new System.Drawing.Point(12, 81);
+            this.textAddToDo.Location = new System.Drawing.Point(12, 84);
             this.textAddToDo.Multiline = true;
             this.textAddToDo.Name = "textAddToDo";
             this.textAddToDo.Size = new System.Drawing.Size(179, 41);
@@ -103,7 +105,7 @@ namespace ToDo
             this.AddToDo_label.BackColor = System.Drawing.Color.Transparent;
             this.AddToDo_label.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.AddToDo_label.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.AddToDo_label.Location = new System.Drawing.Point(27, 58);
+            this.AddToDo_label.Location = new System.Drawing.Point(27, 61);
             this.AddToDo_label.Name = "AddToDo_label";
             this.AddToDo_label.Size = new System.Drawing.Size(149, 20);
             this.AddToDo_label.TabIndex = 10;
@@ -115,33 +117,44 @@ namespace ToDo
             this.Displayed_ToDo_label.BackColor = System.Drawing.Color.Transparent;
             this.Displayed_ToDo_label.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.Displayed_ToDo_label.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.Displayed_ToDo_label.Location = new System.Drawing.Point(27, 148);
+            this.Displayed_ToDo_label.Location = new System.Drawing.Point(27, 151);
             this.Displayed_ToDo_label.Name = "Displayed_ToDo_label";
             this.Displayed_ToDo_label.Size = new System.Drawing.Size(146, 20);
             this.Displayed_ToDo_label.TabIndex = 11;
             this.Displayed_ToDo_label.Text = "Here are your to-do\'s:";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(248, 37);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(52, 35);
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(197, 9);
+            this.label2.Location = new System.Drawing.Point(81, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 25);
             this.label2.TabIndex = 12;
             this.label2.Text = "your ✓  To-Do";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(220, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(52, 35);
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBaymax
+            // 
+            this.pictureBaymax.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBaymax.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBaymax.BackgroundImage")));
+            this.pictureBaymax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBaymax.Location = new System.Drawing.Point(197, 341);
+            this.pictureBaymax.Name = "pictureBaymax";
+            this.pictureBaymax.Size = new System.Drawing.Size(146, 105);
+            this.pictureBaymax.TabIndex = 15;
+            this.pictureBaymax.TabStop = false;
             // 
             // Main
             // 
@@ -149,7 +162,8 @@ namespace ToDo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(571, 472);
+            this.ClientSize = new System.Drawing.Size(364, 472);
+            this.Controls.Add(this.pictureBaymax);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Displayed_ToDo_label);
@@ -164,6 +178,7 @@ namespace ToDo
             this.Load += new System.EventHandler(this.Main_Load);
             this.Leave += new System.EventHandler(this.Main_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBaymax)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,7 +193,8 @@ namespace ToDo
         private System.Windows.Forms.TextBox textAddToDo;
         private System.Windows.Forms.Label AddToDo_label;
         private System.Windows.Forms.Label Displayed_ToDo_label;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBaymax;
     }
 }
