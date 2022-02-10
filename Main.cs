@@ -35,7 +35,7 @@ namespace ToDo
         private void ToDoList_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedItem = todoList.Text;
-            var filter = Builders<Todo>.Filter.Eq("description", selectedItem);
+            var filter = (Builders<Todo>.Filter.Eq("description", selectedItem) & Builders<Todo>.Filter.Eq("owner", Properties.Settings.Default.UserId));
             Todo selectedTodo = this.collection.Find(filter).FirstOrDefault();
 
             if (selectedTodo == null)
@@ -43,6 +43,7 @@ namespace ToDo
                 return;
             }
 
+            //update in the Mongo
             var updatedTodo = Builders<Todo>.Update.Set("isCompleted", !selectedTodo.IsCompleted);
             this.collection.UpdateOne(filter, updatedTodo);
 
@@ -71,7 +72,7 @@ namespace ToDo
             {
                 todoList.SetItemChecked(i, true);
                 string selectedItem = todoList.Items[i].ToString();
-
+                //Filter the to-do's by name in the database
                 var filter = Builders<Todo>.Filter.Eq("description", selectedItem);
                 Todo selectedTodo = this.collection.Find(filter).FirstOrDefault();
 
@@ -102,7 +103,7 @@ namespace ToDo
             {
                 int index = todoList.Items.Add(todo.Description);
 
-                // If todo is completed
+                // If todo is completed - check it
                 if (todo.IsCompleted)
                 {
                     todoList.SetItemChecked(index, true);
